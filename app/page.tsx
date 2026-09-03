@@ -6,6 +6,10 @@ import FeaturedWorkshop from "@/components/FeaturedWorkshop";
 import ExpectSection from "@/components/ExpertSection";
 import ProfessionalOversightSection from "@/components/ProfesionalOversightSection";
 import ChoosingWorkshop from "@/components/ChoosingWorkshopSection";
+import CareJourney from "@/components/CareJourney";
+import MeetOurTeam from "@/components/MeetOurTeam";
+import BookGroupSkillsSection from "@/components/BookGroupSkillsSection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -33,6 +37,10 @@ export default function Home() {
       <ExpectSection/>
       <ProfessionalOversightSection/>
       <ChoosingWorkshop/>
+      <CareJourney/>
+      <MeetOurTeam/>
+      <BookGroupSkillsSection/>
+      <Footer/>
     </main>
   );
 }
