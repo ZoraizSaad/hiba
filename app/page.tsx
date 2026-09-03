@@ -2,10 +2,15 @@ import Hero from "@/components/Hero";
 import ProgrammeSection from "@/components/ProgrammeSection";
 import WorkshopSection from "@/components/WorkshopSection";
 import OurWorkshop from "@/components/OurWorkshop";
+import FeaturedWorkshop from "@/components/FeaturedWorkshop";
+import ExpectSection from "@/components/ExpertSection";
+import ProfessionalOversightSection from "@/components/ProfesionalOversightSection";
+import ChoosingWorkshop from "@/components/ChoosingWorkshopSection";
 
 export default function Home() {
   return (
     <main className="relative flex w-[1400px] flex-col bg-[#FCEFDD]">
+      
       <div className="relative w-[1400px] h-[796px] overflow-hidden">
         <img
           src="/lowerhero.png"
@@ -24,6 +29,10 @@ export default function Home() {
       <ProgrammeSection />
       <WorkshopSection />
       <OurWorkshop />
+      <FeaturedWorkshop/>
+      <ExpectSection/>
+      <ProfessionalOversightSection/>
+      <ChoosingWorkshop/>
     </main>
   );
 }
