@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import BookWorkshopButton from "@/components/BookWorkshopButton";
 
 /* =========================
    SPACING SCALE (single source of truth)
@@ -303,24 +304,17 @@ function BookingButton({
           Add to booking
         </button>
 
-        <button
-          type="button"
-          className="
-            flex w-full items-center justify-center
-            rounded-full
-            border border-[#C1652F40]
-            px-6 py-2.5
-            font-sofia text-[12px] font-medium
-            leading-[16px] tracking-[0px]
-            text-[#613339]
-            transition-opacity duration-300 ease-in-out
-            hover:opacity-70
-          "
+        <BookWorkshopButton
+          variant="outline"
+          size="sm"
+          showIcon={false}
+          showArrow={false}
+          className="w-full border-[#C1652F40] text-[#613339]"
         >
           {availability === "Fully booked"
             ? "Book a Class"
             : "Book Workshop"}
-        </button>
+        </BookWorkshopButton>
       </div>
 
       <div className="flex flex-1 flex-col pt-2">
