@@ -1,7 +1,7 @@
-
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
+import BookWorkshopButton from "@/components/BookWorkshopButton";
 
 const workshops = [
   {
@@ -228,33 +228,18 @@ export default function FeaturedWorkshop() {
                 </div>
 
                 {/* Book Button */}
-                <button
-                  type="button"
-                  onMouseEnter={() => setHoveredBtn(workshop.id)}
-                  onMouseLeave={() => setHoveredBtn(null)}
-                  className={`
-                    mt-auto
-                    mr-auto
-                    rounded-full
-                    border-none
-                    px-6
-                    py-3
-                    font-sofia
-                    text-[14px]
-                    font-semibold
-                    leading-[20px]
-                    text-white
-                    transition-all
-                    duration-300
-                    ${
-                      hoveredBtn === workshop.id
-                        ? "bg-[#953F1B]"
-                        : "bg-[#B85428]"
-                    }
-                  `}
-                >
-                  Book Workshop +
-                </button>
+                <div className="mt-auto mr-auto">
+                  <BookWorkshopButton
+                    variant="terracotta"
+                    size="sm"
+                    iconType="plus"
+                    showIcon={true}
+                    showArrow={false}
+                    href="#"
+                  >
+                    Book Workshop
+                  </BookWorkshopButton>
+                </div>
               </div>
             </div>
           ))}
