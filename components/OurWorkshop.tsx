@@ -1,6 +1,7 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
+import BookWorkshopButton from "@/components/BookWorkshopButton";
 
 interface OurWorkshop {
   number: string;
@@ -142,30 +143,14 @@ function WorkshopTags({
 /* =========================
    BOOK WORKSHOP BUTTON
    ========================= */
-function BookWorkshopButton(): React.ReactElement {
+function LocalBookWorkshopButton(): React.ReactElement {
   return (
-    <button
-      type="button"
-      className="inline-flex h-[36px] w-[150px] items-center justify-center gap-[6px] rounded-full bg-[#b85429] px-[20px] py-[10px] text-center font-inter text-[12px] font-medium leading-[16px] tracking-[0px] text-white transition-all duration-200 hover:bg-[#963f1d]"
-    >
-      <span>Book Workshop</span>
-
-      <svg
-        className="shrink-0"
-        width="10"
-        height="10"
-        viewBox="0 0 13 13"
-        fill="none"
-        aria-hidden="true"
-      >
-        <path
-          d="M6.5 2V11M2 6.5H11"
-          stroke="currentColor"
-          strokeWidth="1"
-          strokeLinecap="round"
-        />
-      </svg>
-    </button>
+    <BookWorkshopButton
+      variant="terracotta"
+      size="sm"
+      iconType="plus"
+      showArrow={false}
+    />
   );
 }
 
