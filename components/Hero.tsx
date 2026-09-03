@@ -2,6 +2,7 @@
 
 import Navbar from "@/components/Navbar";
 import React, { useState } from "react";
+import BookWorkshopButton from "@/components/BookWorkshopButton";
 
 export default function Hero() {
   const [selectedDay, setSelectedDay] = useState<"Saturday" | "Sunday">(
@@ -285,30 +286,14 @@ export default function Hero() {
                   </p>
                 </div>
 
-                <div className="mt-[58px] flex w-[195px]">
-                  <button
-                    type="button"
-                    className="flex h-[52px] w-[195px] items-center justify-center gap-[8px] rounded-full bg-[#FCEFDD] transition-transform duration-300 hover:scale-105"
-                  >
-                    <span className="font-sofia text-[20px] font-medium leading-[24px] text-[#B85428]">
-                      Book Workshop
-                    </span>
-
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                    >
-                      <path
-                        d="M5.5 8H10.5M10.5 8L8.5 6M10.5 8L8.5 10"
-                        stroke="#B85428"
-                        strokeWidth="0.83"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </button>
+                <div className="mt-[58px] flex">
+                  <BookWorkshopButton
+                    variant="secondary"
+                    size="md"
+                    showIcon={false}
+                    showArrow={true}
+                    href="#"
+                  />
                 </div>
               </div>
 
@@ -1025,15 +1010,14 @@ export default function Hero() {
                 </div>
 
                 {/* BOOK BUTTON */}
-                <div className="mt-[22.04px] h-[40px] w-full">
-                  <button
-                    type="button"
-                    className="flex h-[40px] w-full items-center justify-center rounded-full bg-[#B85428] transition-transform duration-300 hover:scale-[1.01]"
-                  >
-                    <span className="font-sofia text-[16px] font-medium leading-[24px] text-[#FCEFDD]">
-                      Book Workshop
-                    </span>
-                  </button>
+                <div className="mt-[22.04px] w-full">
+                  <BookWorkshopButton
+                    variant="terracotta"
+                    size="md"
+                    showIcon={false}
+                    showArrow={true}
+                    className="w-full"
+                  />
                 </div>
 
                 {/* SECURE PAYMENT */}

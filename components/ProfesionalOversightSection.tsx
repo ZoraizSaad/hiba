@@ -72,14 +72,33 @@ This helps ensure each workshop follows appropriate, evidence
             </p>
           </div>
 
-        </div>
-         <div className="flex w-[502px] shrink-0 items-end justify-center ml-[50px]">
-          <div className="relative h-[512px] w-[400px] overflow-hidden rounded-[9999px_9999px_28px_28px] bg-[#D3ADB5]">
-            <img
-              width={502}
-              src="/ProfessionalOversight.jpg"
-              alt="Children building skills"
-              className="h-full w-full object-cover"
+          </div>
+         <div className="flex w-[502px] shrink-0 items-center justify-center ml-[50px]">
+          <div className="relative h-[550px] w-[400px]">
+            {/* Image - clipped to arch */}
+            <div
+              className="absolute inset-0 overflow-hidden"
+              style={{
+                borderTopLeftRadius: "291.66px",
+                borderTopRightRadius: "291.66px",
+              }}
+            >
+              <img
+                src="/ProfessionalOversight.jpg"
+                alt="Professional Oversight"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            {/* Blurred border ring on top */}
+            <div
+              className="pointer-events-none absolute inset-0"
+              style={{
+                borderTopLeftRadius: "291.66px",
+                borderTopRightRadius: "291.66px",
+                border: "16px solid rgba(255, 248, 242, 0.2)",
+                filter: "blur(1px)",
+              }}
             />
           </div>
         </div>
